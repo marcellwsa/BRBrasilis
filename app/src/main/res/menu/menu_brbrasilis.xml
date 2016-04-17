@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".BRBrasilisActivity">
+    <item android:id="@+id/menu_sobre" android:title="Sobre..."></item>
+    <!--<item android:id="@+id/menu_abrir" android:title="Abrir"></item>-->
+    <!--<item android:id="@+id/menu_salvar" android:title="Salvar"></item>-->
+
+</menu>

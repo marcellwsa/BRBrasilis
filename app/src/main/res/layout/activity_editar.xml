@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.marcell.brbrasilis.EditarActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione um código:"
+        android:id="@+id/textViewSelecioneCodigo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="26dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTCodigoEditar"
+        android:gravity="center_horizontal"
+        android:layout_alignBottom="@+id/textViewSelecioneCodigo"
+        android:layout_toLeftOf="@+id/buttonSelecionar"
+        android:layout_toRightOf="@+id/textViewSelecioneCodigo"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecionar"
+        android:id="@+id/buttonSelecionar"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/buttonAvancar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt;"
+        android:id="@+id/buttonVoltar"
+        android:layout_alignTop="@+id/buttonAvancar"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">"
+        android:id="@+id/buttonAvancar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cód:"
+        android:id="@+id/textViewCodigo"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/buttonSelecionar"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BR:"
+        android:id="@+id/textViewBR"
+        android:layout_above="@+id/eTBR1"
+        android:layout_toRightOf="@+id/buttonVoltar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data:"
+        android:id="@+id/textViewData"
+        android:layout_alignTop="@+id/textViewBR"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora:"
+        android:id="@+id/textViewHora"
+        android:layout_above="@+id/eTData1"
+        android:layout_alignLeft="@+id/buttonAvancar" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTCodigo1"
+        android:layout_below="@+id/textViewCodigo"
+        android:layout_alignParentLeft="true"
+        android:editable="false"
+        android:inputType="none"
+        android:textSize="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTBR1"
+        android:inputType="none"
+        android:layout_below="@+id/textViewCodigo"
+        android:layout_toRightOf="@+id/eTCodigo1"
+        android:layout_alignRight="@+id/textViewBR"
+        android:textSize="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTData1"
+        android:layout_below="@+id/textViewData"
+        android:layout_toRightOf="@+id/eTBR1"
+        android:layout_toLeftOf="@+id/textViewHora"
+        android:textSize="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTHora1"
+        android:layout_below="@+id/textViewHora"
+        android:layout_alignRight="@+id/buttonSelecionar"
+        android:layout_toRightOf="@+id/eTData1"
+        android:textSize="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTCodigo2"
+        android:layout_below="@+id/eTCodigo1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/eTCodigo1"
+        android:textSize="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTBR2"
+        android:layout_alignBottom="@+id/eTCodigo2"
+        android:layout_alignLeft="@+id/eTBR1"
+        android:layout_toLeftOf="@+id/eTData1"
+        android:textSize="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTData2"
+        android:layout_below="@+id/eTData1"
+        android:layout_alignRight="@+id/eTData1"
+        android:layout_toRightOf="@+id/eTBR1"
+        android:textSize="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTHora2"
+        android:layout_alignBottom="@+id/eTData2"
+        android:layout_toRightOf="@+id/eTData1"
+        android:layout_alignRight="@+id/eTHora1"
+        android:textSize="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTCodigo3"
+        android:layout_below="@+id/eTCodigo2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/eTCodigo2"
+        android:textSize="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTBR3"
+        android:layout_below="@+id/eTBR2"
+        android:layout_alignLeft="@+id/eTBR2"
+        android:layout_toLeftOf="@+id/eTData2"
+        android:textSize="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTData3"
+        android:layout_below="@+id/eTBR2"
+        android:layout_toRightOf="@+id/eTBR3"
+        android:layout_alignRight="@+id/eTData2"
+        android:textSize="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTHora3"
+        android:layout_alignBottom="@+id/eTData3"
+        android:layout_alignLeft="@+id/eTHora2"
+        android:layout_alignRight="@+id/eTHora2"
+        android:textSize="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTCodigo4"
+        android:layout_below="@+id/eTCodigo3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/eTCodigo3"
+        android:textSize="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTBR4"
+        android:layout_below="@+id/eTBR3"
+        android:layout_alignLeft="@+id/eTBR3"
+        android:layout_toLeftOf="@+id/eTData3"
+        android:textSize="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTData4"
+        android:layout_below="@+id/eTBR3"
+        android:layout_toRightOf="@+id/eTBR4"
+        android:layout_alignRight="@+id/eTData3"
+        android:textSize="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTHora4"
+        android:layout_below="@+id/eTData3"
+        android:layout_toRightOf="@+id/eTData4"
+        android:layout_alignRight="@+id/eTHora3"
+        android:textSize="12dp" />
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Placa:*"
+        android:id="@+id/textViewPlaca"
+        android:layout_alignBaseline="@+id/eTPlaca"
+        android:layout_alignBottom="@+id/eTPlaca" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTPlaca"
+        android:layout_toRightOf="@+id/textViewPlaca"
+        android:layout_marginTop="69dp"
+        android:maxLength="7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="V:"
+        android:id="@+id/textViewV"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/textViewPlaca"
+        android:layout_alignRight="@+id/textViewPlaca" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eTV"
+        android:editable="false"
+        android:inputType="none"
+        android:layout_alignBottom="@+id/textViewV"
+        android:layout_toRightOf="@+id/textViewPlaca" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Condutor -->"
+        android:id="@+id/buttonCondutor"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/eTPlaca" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total de Passageiros (excluindo o condutor):"
+        android:id="@+id/textViewTotalPassageiros"
+        android:layout_below="@+id/eTPlaca"
+        android:layout_alignLeft="@+id/textViewPlaca"
+        android:layout_marginTop="26dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/eTTotalPassageiros"
+        android:layout_below="@+id/textViewTotalPassageiros"
+        android:layout_alignLeft="@+id/textViewTotalPassageiros"
+        android:maxLength="2"
+        android:layout_toLeftOf="@+id/buttonCondutor" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foto Frente"
+        android:id="@+id/buttonFotoFrente"
+        android:layout_below="@+id/buttonCondutor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/buttonFotoEsquerda" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foto Direita"
+        android:id="@+id/buttonFotoDireita"
+        android:layout_alignTop="@+id/buttonFotoFrente"
+        android:layout_alignRight="@+id/buttonCondutor"
+        android:layout_alignLeft="@+id/buttonFotoTraseira" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foto Esquerda"
+        android:id="@+id/buttonFotoEsquerda"
+        android:layout_below="@+id/buttonFotoFrente"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foto Traseira"
+        android:id="@+id/buttonFotoTraseira"
+        android:layout_alignTop="@+id/buttonFotoEsquerda"
+        android:layout_alignRight="@+id/buttonCondutor" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir Fotos"
+        android:id="@+id/buttonAbrirFotos"
+        android:layout_below="@+id/buttonFotoEsquerda"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textViewLocalFotos"
+        android:layout_alignTop="@+id/buttonAbrirFotos"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

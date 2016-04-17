@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Condutor de V:"
+            android:id="@+id/textViewCondutor"
+            android:layout_above="@+id/eTNomeCondutor"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eTCondutorV"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textViewCondutor"
+            android:layout_alignParentLeft="false" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome:"
+            android:id="@+id/textViewNomePassageiro"
+            android:layout_below="@+id/eTCondutorV"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/eTNomeCondutor"
+            android:layout_alignBaseline="@+id/textViewNomePassageiro"
+            android:layout_alignBottom="@+id/textViewNomePassageiro"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/textViewNomePassageiro"
+            android:maxLength="70"
+            android:width="70dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CPF:*"
+            android:id="@+id/textViewCPF"
+            android:layout_below="@+id/textViewNomePassageiro"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/eTCPFCondutor"
+            android:layout_alignBottom="@+id/textViewCPF"
+            android:layout_alignLeft="@+id/eTNomeCondutor"
+            android:maxLength="15" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Naturalidade:"
+            android:id="@+id/textViewNaturalidade"
+            android:layout_below="@+id/textViewCPF"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/eTNaturalidadeCondutor"
+            android:layout_alignBottom="@+id/textViewNaturalidade"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/textViewCondutor"
+            android:maxLength="45"
+            android:width="70dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado Civil:"
+            android:id="@+id/textViewEstadoCivil"
+            android:layout_alignBottom="@+id/eTEstadoCivilCondutor"
+            android:layout_alignParentLeft="true" />
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eTEstadoCivilCondutor"
+            android:layout_column="1"
+            android:maxLength="45" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefone:"
+            android:id="@+id/textViewTelefone"
+            android:layout_alignBottom="@+id/eTTelefoneCondutor"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/eTTelefoneCondutor"
+            android:inputType="phone"
+            android:layout_below="@+id/textViewEstadoCivil"
+            android:layout_toRightOf="@+id/textViewEstadoCivil"
+            android:maxLength="45"
+            android:width="65dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolaridade:"
+            android:id="@+id/textViewEscolaridade"
+            android:layout_below="@+id/textViewTelefone"
+            android:layout_alignParentLeft="true"
+            android:layout_column="0" />
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eTEscolaridadeCondutor"
+            android:layout_column="1" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Endereço:"
+            android:id="@+id/textViewEndereco"
+            android:layout_below="@+id/textViewEscolaridade"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eTEnderecoCondutor"
+            android:layout_alignBottom="@+id/textViewEndereco"
+            android:layout_toRightOf="@+id/textViewEndereco"
+            android:layout_alignRight="@+id/eTTelefoneCondutor"
+            android:layout_column="1"
+            android:maxLength="70"
+            android:width="70dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ocupação:"
+            android:id="@+id/textViewOcupacao"
+            android:layout_below="@+id/textViewEndereco"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eTOcupacaoCondutor"
+            android:layout_alignBottom="@+id/textViewOcupacao"
+            android:layout_toRightOf="@+id/textViewEstadoCivil"
+            android:layout_alignRight="@+id/eTTelefoneCondutor"
+            android:maxLength="45"
+            android:width="70dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cinto?"
+            android:id="@+id/textViewCinto"
+            android:layout_alignBottom="@+id/checkBoxCintoCondutor"
+            android:layout_alignParentLeft="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBoxCintoCondutor"
+            android:layout_below="@+id/eTOcupacaoCondutor"
+            android:layout_toRightOf="@+id/textViewCinto" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Etilômetro:"
+            android:id="@+id/textViewEtilometro"
+            android:layout_alignBottom="@+id/checkBoxCintoCondutor"
+            android:layout_toRightOf="@+id/textViewEscolaridade" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eTEtilometroCondutor"
+            android:layout_alignBottom="@+id/textViewEtilometro"
+            android:layout_toRightOf="@+id/textViewEtilometro"
+            android:layout_alignRight="@+id/eTOcupacaoCondutor"
+            android:maxLength="40"
+            android:width="50dp"
+            android:text="teste = 00000, Res = 0.00" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passageiros -->"
+            android:id="@+id/buttonPassageiros"
+            android:layout_alignTop="@+id/eTEtilometroCondutor"
+            android:layout_alignRight="@+id/eTEtilometroCondutor"
+            android:layout_column="1" />
+    </TableRow>
+
+</TableLayout>
+</ScrollView>

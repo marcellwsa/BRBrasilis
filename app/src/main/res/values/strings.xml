@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">BRBrasilis</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="opcoesQuantidadeVeiculos">
+        <item>  </item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+    </string-array>
+    <string name="title_activity_sobre">Sobre</string>
+    <string name="title_activity_editar">Editar</string>
+    <string name="title_activity_informacoes_basicas">Informações Básicas</string>
+    <string name="title_activity_veiculos">Veiculos</string>
+    <string name="title_activity_condutor">Condutor</string>
+    <string name="title_activity_passageiros">Passageiros</string>
+    <string-array name="opcoesEstadoCivil">
+        <item>Solteiro</item>
+        <item>Viúvo</item>
+        <item>Casado</item>
+        <item>Divorciado</item>
+        <item>Companheiro</item>
+
+    </string-array>
+    <string-array name="opcoesEscolaridade">
+        <item>Superior completo</item>
+        <item>Superior incompleto</item>
+        <item>Médio</item>
+        <item>Fundamental</item>
+        <item>Analfabeto</item>
+
+    </string-array>
+    <string name="title_activity_fotos">Fotos</string>
+    <string name="novas_versoes">Para novas versões, procure AQUI!</string>
+</resources>
