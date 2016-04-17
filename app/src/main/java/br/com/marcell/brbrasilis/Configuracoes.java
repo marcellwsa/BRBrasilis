@@ -19,8 +19,8 @@ import java.util.Date;
  */
 public class Configuracoes extends Activity{
 
-    public final String versao = "BETA";
-    public final String programa = "BrBrasilis";
+    public final String versao = "1.0";
+    public final String programa = "BRBrasilis";
 
     //variaveis relativos ao BD
     private String tabelaInformacoesBasicas = "tabelainformacoesbasicas";
