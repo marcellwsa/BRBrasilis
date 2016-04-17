@@ -1,0 +1,9 @@
+Programa BRBrasilis V1.0
+
+Desenvolvido com a intenção de facilitar a coleta de dados durante um BAT, na hora do atendimento.
+
+Qualquer dúvida, sugestão, críticas, entrar em contato pelos meios abaixo:
+E-mail: marcell.wendling@prf.gov.br
+Tels: 68.9604.9066 e/ou 81.99914.1577 (ambos tem whatsapp).
+
+OBS.: Não faz a integração com o BRBrasil.
