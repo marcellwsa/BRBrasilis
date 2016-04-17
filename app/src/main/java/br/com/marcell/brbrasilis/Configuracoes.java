@@ -19,7 +19,7 @@ import java.util.Date;
  */
 public class Configuracoes extends Activity{
 
-    public final String versao = "1.0";
+    public final String versao = "1.0"; //teste
     public final String programa = "BRBrasilis";
 
     //variaveis relativos ao BD
