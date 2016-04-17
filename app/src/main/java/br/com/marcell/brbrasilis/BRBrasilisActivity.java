@@ -125,9 +125,6 @@ public class BRBrasilisActivity extends Activity {
         startActivity(intentInformacoesBasicas);
     }
 
-    private void teste() {
-
-    }
     public void CarregaTelaEditar() {
         Intent intentEditar = new Intent(BRBrasilisActivity.this, EditarActivity.class);
         startActivity(intentEditar);
