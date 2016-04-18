@@ -28,7 +28,7 @@ public class Configuracoes extends Activity{
     private String tabelaCondutor = "tabelacondutor";
     private String tabelaPassageiros = "tabelapassageiros";
     private String nomeBanco = "bancoBRBrasilis"; //nome do banco de dados
-    private String siteAtualizacaoAPK = "https://www.dropbox.com/sh/d2v82n7vsjoupgl/AADzDOmFWk-SC8HdZPfwu4Uxa?dl=0"; //site do mega
+    private String siteAtualizacaoAPK = "https://www.dropbox.com/sh/d2v82n7vsjoupgl/AADzDOmFWk-SC8HdZPfwu4Uxa?dl=0"; //site do dropbox
 
     public String getSiteAtualizacaoAPK() {
         return siteAtualizacaoAPK;

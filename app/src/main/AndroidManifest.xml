@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.marcell.brbrasilis"
     android:versionCode="2"
-    android:versionName="1.1">
+    android:versionName="1.0">
     <!--Proxima versão-->
 
     <!-- <uses-permission android:name="android.permission.CALL_PHONE" /> -->

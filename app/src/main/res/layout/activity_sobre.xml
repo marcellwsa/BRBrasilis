@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dúvidas, Sugestões, críticas ou elogios:"
+            android:text="Dúvidas, Sugestões ou críticas:"
             android:id="@+id/textViewComplemento"
             android:layout_column="0" />
     </TableRow>
